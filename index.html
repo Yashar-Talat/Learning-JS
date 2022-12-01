@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,18 @@
     <link rel="stylesheet" href="Style.css">
 
 </head>
+
 <body>
+    <h1 id="res">Show Date</h1><br>
+    <input type="button" value="ShowDate" onclick="showDate()"><br>
+    <button onclick="this.innerHTML=Date()">Show Date</button><br>
+    <p id="pa">Changing Place</p>
+    <input type="text" onchange="Change(this.value)">
 
 
-<script src="myJS.js"></script>    
+
+
+    <script src="myJS.js"></script>
 </body>
 
 </html>
