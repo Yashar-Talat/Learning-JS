@@ -1,11 +1,7 @@
-var i = 0;
-do {
-    document.write(i + "<br/>");
-    i++;
-}while(i < 20);
 
-var x = 100;
-do{
-    alert(x);
-    x++;
-}while(x < 10)
+for(var i = 0 ; i <= 10;i++) {
+    if(i===3 || i===7) {
+        break;
+    }
+    document.write(i + "<br>");
+}
