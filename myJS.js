@@ -5,7 +5,7 @@ let person = {
     firstName:"Amin",
     lastName:"Talatiiiii",
     fullName:function() {
-        return this.firstName + this.lastName;
+        return firstName + lastName;
     }
 }
 alert(person.fullName());
