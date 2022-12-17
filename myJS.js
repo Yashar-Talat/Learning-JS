@@ -8,16 +8,15 @@ function myFunction() {
         return false;
     }
     x = Number(x);
-    if(x) {
-        alert("No number Fuck off!!1");
-        return false;
-    }
     try {
         if(x) throw "No number!!!";
+        // return false;
     } catch (error) {
         alert("Error:" + error);
+        // return false;
     }
     finally {
-        document.getElementById("strName").value = "";
+        document.getElementById("tex").value = "";
+        return false;
     }
 }
