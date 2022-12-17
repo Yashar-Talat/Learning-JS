@@ -1,22 +1,22 @@
 //Validation of form
 
 function myFunction() {
-    let x = document.forms["myform"]["strName"].value;
+   let strName = document.forms["myform"]["strName"].value;
+   let email = document.forms["myform"]["email"].value;
 
-    if(x=="") {
-        alert("Please enter something!!");
-        return false;
-    }
-    x = Number(x);
-    try {
-        if(x) throw "No number!!!";
-        // return false;
-    } catch (error) {
-        alert("Error:" + error);
-        // return false;
-    }
-    finally {
-        document.getElementById("tex").value = "";
-        return false;
-    }
+   try {
+    if(strName == "") throw "Please Enter name!!!";
+    strName = Number(strName);
+    if(strName) throw "dont enter number!!";
+    if(email == "") throw "Please enter email...";
+    email = Number(email);
+    if(email) throw "Not valid";
+   } catch (error) {
+    alert("Error:"+error);
+   }
+   finally {
+    document.getElementById("tex").value = "";
+    document.getElementById("mail").value = "";
+    return false;
+   }
 }
