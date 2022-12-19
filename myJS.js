@@ -17,8 +17,10 @@ function multiply(x = 14, y = 10) {
 alert(multiply());
 
 function argument() {
-    for (let index = 0; index < argument.length; index++) {
-        document.write(argument[index] + "<br>");
+    for (let index = 0; index < arguments.length; index++) {
+        document.write(arguments[index] + "<br>");
     }
 }
 argument("Yashar","Talat",19,"Tabriz",true,"Learning","uni Azad");
+
+// inner Methods
