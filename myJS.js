@@ -24,3 +24,16 @@ function argument() {
 argument("Yashar","Talat",19,"Tabriz",true,"Learning","uni Azad");
 
 // inner Methods
+
+function add() {
+    let i = 0;
+    function plus() {
+        i++;
+    }
+    plus();
+    plus();
+    plus();
+    plus();
+    return i;
+}
+alert(add());
