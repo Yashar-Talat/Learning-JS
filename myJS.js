@@ -1,11 +1,12 @@
 //Introduce type of function in js
 
-function myFunction() {
-    let a, b, c;
-    a = 25;
-    b = 10;
-    c = 4;
-    let sum = a + b + c;
-    return sum;
+var doMultiply = function(a,b) {
+return a*b;
+};
+let res = doMultiply(4,5);
+console.log(res);
+
+let sumString = function(name,lastName) {
+    return name + lastName;
 }
-document.write(myFunction());
+document.write(sumString("Yashar","Talat"));
