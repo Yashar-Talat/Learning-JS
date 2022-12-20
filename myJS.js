@@ -1,9 +1,9 @@
-let element = document.createElement("p");
-let text = document.createTextNode("this created by JS");
-element.appendChild(text);
+let aTag = document.createElement("a");
+let link = document.createTextNode("https://github.com/Yashar-Talat");
+aTag.appendChild(link);
 
-var parent = document.getElementById("div1");
-// var child = document.getElementById("p1");
-var child = document.getElementById("p3");
-parent.insertBefore(element,child);
+let parent = document.getElementById("div1");
+let child = document.getElementById("p1");
+parent.insertBefore(aTag,child);
+
 
