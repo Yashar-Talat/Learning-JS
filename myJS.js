@@ -6,4 +6,5 @@ let parent = document.getElementById("div1");
 let child = document.getElementById("p1");
 parent.insertBefore(aTag,child);
 
+parent.removeChild(p2);
 
