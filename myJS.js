@@ -5,13 +5,14 @@ btn.addEventListener("click", myFunction);
 
 function myFunction() {
     let text = "";
-    let person = prompt("Enter Name:");
-    if (person == "") {
+    let firstName = prompt("Enter Name:");
+    let lastName = prompt("Enter LastName:");
+    if (firstName == "" || lastName == "") {
         text = "Emptyyy!!!";
-    } else if (person == Number(person)) {
+    } else if (firstName == Number(firstName) || lastName == Number(lastName) ) {
         text = "OHM!Not Number Just Name!";
     } else {
-        text = "Hello"+ " " + person;
+        text = "Hello"+ " " + firstName + " " + lastName;
     }
     document.getElementById("demo").innerHTML = text;
 }
