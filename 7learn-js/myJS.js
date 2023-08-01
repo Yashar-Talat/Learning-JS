@@ -1,10 +1,6 @@
-// if - else if - switch 
+// if - else if - switch - ternary if
 
-var age = prompt("How old are you?");
+var age = prompt("say your age....????");
 
-if (age >= 20) {
-    alert("You can join to web...");
-}
-else if (age < 10 ){
-alert("nothing to say!!!!");
-}
+// age > 25 && age < 50 ? alert("You are older>>>>???"): alert("you are babyyyyyyyyy???hahhahahha");
+age > 20 && age <= 50 ? alert("you can join us") : age>50 ? alert("not bad!!! you older") : alert("you bad");
