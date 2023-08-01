@@ -1,6 +1,15 @@
 // if - else if - switch - ternary if
 
-var age = prompt("say your age....????");
+var age = prompt("what is your age?");
 
-// age > 25 && age < 50 ? alert("You are older>>>>???"): alert("you are babyyyyyyyyy???hahhahahha");
-age > 20 && age <= 50 ? alert("you can join us") : age>50 ? alert("not bad!!! you older") : alert("you bad");
+switch (age) {
+    case "23":
+        document.write("my brother you can join....")
+        break;
+    case "45":
+        case "50":
+            alert("hmmm you older");
+            break;
+    default:
+        break;
+}
